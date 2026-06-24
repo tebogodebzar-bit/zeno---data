@@ -1,0 +1,129 @@
+{
+  "last_updated": "2026-04-24",
+  "version": "2.0",
+  "universities": [
+    {
+      "code": "UJ",
+      "name": "University of Johannesburg",
+      "location": "Johannesburg, Gauteng",
+      "website": "https://www.uj.ac.za",
+      "apply": "https://www.uj.ac.za/apply",
+      "prospectus": "https://www.uj.ac.za/about/strategic-documents",
+      "logo": "UJ",
+      "appFee": "R200",
+      "deadline": "2026-09-30"
+    },
+    {
+      "code": "UP",
+      "name": "University of Pretoria",
+      "location": "Pretoria, Gauteng",
+      "website": "https://www.up.ac.za",
+      "apply": "https://www.up.ac.za/apply",
+      "prospectus": "https://www.up.ac.za/yearbooks",
+      "logo": "UP",
+      "appFee": "R300",
+      "deadline": "2026-06-30"
+    },
+    {
+      "code": "Wits",
+      "name": "Wits University",
+      "location": "Johannesburg, Gauteng",
+      "website": "https://www.wits.ac.za",
+      "apply": "https://www.wits.ac.za/apply/",
+      "prospectus": "https://www.wits.ac.za/course-information/",
+      "logo": "WITS",
+      "appFee": "R100",
+      "deadline": "2026-09-30"
+    },
+    {
+      "code": "UCT",
+      "name": "University of Cape Town",
+      "location": "Cape Town, Western Cape",
+      "website": "https://www.uct.ac.za",
+      "apply": "https://www.uct.ac.za/apply",
+      "prospectus": "https://www.uct.ac.za/apply/handbook",
+      "logo": "UCT",
+      "appFee": "R100",
+      "deadline": "2026-07-31"
+    },
+    {
+      "code": "SU",
+      "name": "Stellenbosch University",
+      "location": "Stellenbosch, Western Cape",
+      "website": "https://www.sun.ac.za",
+      "apply": "https://www.maties.com/apply/",
+      "prospectus": "https://www.sun.ac.za/english/faculty",
+      "logo": "SU",
+      "appFee": "R100",
+      "deadline": "2026-06-30"
+    },
+    {
+      "code": "NWU",
+      "name": "North-West University",
+      "location": "Potchefstroom, North West",
+      "website": "https://www.nwu.ac.za",
+      "apply": "https://www.nwu.ac.za/apply",
+      "prospectus": "https://www.nwu.ac.za/content/yearbooks",
+      "logo": "NWU",
+      "appFee": "R200",
+      "deadline": "2026-09-30"
+    },
+    {
+      "code": "UL",
+      "name": "University of Limpopo",
+      "location": "Polokwane, Limpopo",
+      "website": "https://www.ul.ac.za",
+      "apply": "https://www.ul.ac.za/apply",
+      "prospectus": "https://www.ul.ac.za/academics/faculties",
+      "logo": "UL",
+      "appFee": "R200",
+      "deadline": "2026-09-30"
+    },
+    {
+      "code": "UNISA",
+      "name": "UNISA",
+      "location": "Pretoria - Distance",
+      "website": "https://www.unisa.ac.za",
+      "apply": "https://www.unisa.ac.za/apply",
+      "prospectus": "https://www.unisa.ac.za/sites/corporate/default/Colleges",
+      "logo": "UNISA",
+      "appFee": "R125",
+      "deadline": "2026-10-14"
+    }
+  ],
+  "bursaries": [
+    {
+      "name": "NSFAS Bursary",
+      "provider": "NSFAS",
+      "field": "General",
+      "aps": 0,
+      "amount": "Full tuition plus allowance",
+      "deadline": "2027-01-31",
+      "status": "open",
+      "apply": "https://www.nsfas.org.za",
+      "requirements": "SA citizen, household income under 350000 per year"
+    },
+    {
+      "name": "Sasol Bursary",
+      "provider": "Sasol",
+      "field": "STEM",
+      "aps": 32,
+      "amount": "Full tuition plus stipend",
+      "deadline": "2026-05-31",
+      "status": "closing",
+      "apply": "https://www.sasol.com/careers/bursaries",
+      "requirements": "Grade 12 Maths and Physical Science 70 percent"
+    }
+  ],
+  "courses": [
+    {
+      "name": "BSc Computer Science",
+      "uni": "Wits",
+      "faculty": "Science",
+      "aps": 35,
+      "duration": "3 years",
+      "subjects": "Maths 70 percent, Physical Science 70 percent",
+      "apply": "https://www.wits.ac.za/apply/"
+    }
+  ]
+}
