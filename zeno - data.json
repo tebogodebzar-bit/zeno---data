@@ -1,79 +1,107 @@
 {
   "last_updated": "2026-04-24",
-  "version": "3.0",
+  "version": "3.1",
   "subjects": [
-    {"name":"Mathematics","code":"MATH","counts_for_aps":true},
-    {"name":"Mathematical Literacy","code":"MATHLIT","counts_for_aps":true},
-    {"name":"English HL","code":"ENGHL","counts_for_aps":true},
-    {"name":"English FAL","code":"ENGFAL","counts_for_aps":true},
-    {"name":"Afrikaans HL","code":"AFRHL","counts_for_aps":true},
-    {"name":"Afrikaans FAL","code":"AFRFAL","counts_for_aps":true},
-    {"name":"Sepedi HL","code":"NPHL","counts_for_aps":true},
-    {"name":"IsiZulu HL","code":"ZULHL","counts_for_aps":true},
-    {"name":"Physical Sciences","code":"PHY","counts_for_aps":true},
-    {"name":"Life Sciences","code":"LIFE","counts_for_aps":true},
-    {"name":"Accounting","code":"ACC","counts_for_aps":true},
-    {"name":"Business Studies","code":"BUS","counts_for_aps":true},
-    {"name":"Economics","code":"ECO","counts_for_aps":true},
-    {"name":"Geography","code":"GEO","counts_for_aps":true},
-    {"name":"History","code":"HIST","counts_for_aps":true},
-    {"name":"Tourism","code":"TOUR","counts_for_aps":true},
-    {"name":"CAT","code":"CAT","counts_for_aps":true},
-    {"name":"IT","code":"IT","counts_for_aps":true},
-    {"name":"Agricultural Sciences","code":"AGR","counts_for_aps":true},
-    {"name":"Visual Arts","code":"ART","counts_for_aps":true},
-    {"name":"Life Orientation","code":"LO","counts_for_aps":false}
+    {"name":"Mathematics","code":"MATH","counts_for_aps":true,"category":"core"},
+    {"name":"Mathematical Literacy","code":"MATHLIT","counts_for_aps":true,"category":"core"},
+    {"name":"English HL","code":"ENGHL","counts_for_aps":true,"category":"language"},
+    {"name":"English FAL","code":"ENGFAL","counts_for_aps":true,"category":"language"},
+    {"name":"Afrikaans HL","code":"AFRHL","counts_for_aps":true,"category":"language"},
+    {"name":"Afrikaans FAL","code":"AFRFAL","counts_for_aps":true,"category":"language"},
+    {"name":"IsiZulu HL","code":"ZULHL","counts_for_aps":true,"category":"language"},
+    {"name":"Sepedi HL","code":"NPHL","counts_for_aps":true,"category":"language"},
+    {"name":"Sesotho HL","code":"STHL","counts_for_aps":true,"category":"language"},
+    {"name":"Setswana HL","code":"TNHL","counts_for_aps":true,"category":"language"},
+    {"name":"Physical Sciences","code":"PHY","counts_for_aps":true,"category":"science"},
+    {"name":"Life Sciences","code":"LIFE","counts_for_aps":true,"category":"science"},
+    {"name":"Accounting","code":"ACC","counts_for_aps":true,"category":"commerce"},
+    {"name":"Business Studies","code":"BUS","counts_for_aps":true,"category":"commerce"},
+    {"name":"Economics","code":"ECO","counts_for_aps":true,"category":"commerce"},
+    {"name":"Geography","code":"GEO","counts_for_aps":true,"category":"humanities"},
+    {"name":"History","code":"HIST","counts_for_aps":true,"category":"humanities"},
+    {"name":"Tourism","code":"TOUR","counts_for_aps":true,"category":"vocational"},
+    {"name":"CAT","code":"CAT","counts_for_aps":true,"category":"tech"},
+    {"name":"IT","code":"IT","counts_for_aps":true,"category":"tech"},
+    {"name":"Agricultural Sciences","code":"AGR","counts_for_aps":true,"category":"science"},
+    {"name":"Life Orientation","code":"LO","counts_for_aps":false,"category":"core"}
   ],
   "aps_rules": {
-    "default": {"80-100":7,"70-79":6,"60-69":5,"50-59":4,"40-49":3,"30-39":2,"0-29":1,"ignore_LO":true},
+    "NSC_DEFAULT": {"80-100":7,"70-79":6,"60-69":5,"50-59":4,"40-49":3,"30-39":2,"0-29":1,"ignore_LO":true,"min_subjects":6},
+    "UCT": {"80-100":7,"70-79":6,"60-69":5,"50-59":4,"40-49":3,"30-39":2,"0-29":1,"ignore_LO":true,"min_subjects":6,"required_subs":["ENGHL","MATH"]},
+    "WITS": {"80-100":7,"70-79":6,"60-69":5,"50-59":4,"40-49":3,"30-39":2,"0-29":1,"ignore_LO":true,"min_subjects":6},
     "UP": {"75-100":7,"70-74":6,"60-69":5,"50-59":4,"40-49":3,"30-39":2,"0-29":1,"ignore_LO":true,"min_subjects":6},
-    "UCT": {"80-100":7,"70-79":6,"60-69":5,"50-59":4,"40-49":3,"30-39":2,"0-29":1,"ignore_LO":true,"required_subs":["ENGHL","MATH"]},
-    "WITS": {"80-100":7,"70-79":6,"60-69":5,"50-59":4,"40-49":3,"30-39":2,"0-29":1,"ignore_LO":true},
-    "SU": {"80-100":7,"70-79":6,"60-69":5,"50-59":4,"40-49":3,"30-39":2,"0-29":1,"ignore_LO":false},
-    "UJ": {"80-100":7,"70-79":6,"60-69":5,"50-59":4,"40-49":3,"30-39":2,"0-29":1,"ignore_LO":true}
+    "SU": {"80-100":7,"70-79":6,"60-69":5,"50-59":4,"40-49":3,"30-39":2,"0-29":1,"ignore_LO":false,"min_subjects":7},
+    "UJ": {"80-100":7,"70-79":6,"60-69":5,"50-59":4,"40-49":3,"30-39":2,"0-29":1,"ignore_LO":true,"min_subjects":6},
+    "NWU": {"80-100":7,"70-79":6,"60-69":5,"50-59":4,"40-49":3,"30-39":2,"0-29":1,"ignore_LO":true,"min_subjects":6},
+    "UL": {"80-100":7,"70-79":6,"60-69":5,"50-59":4,"40-49":3,"30-39":2,"0-29":1,"ignore_LO":true,"min_subjects":6},
+    "UNISA": {"80-100":7,"70-79":6,"60-69":5,"50-59":4,"40-49":3,"30-39":2,"0-29":1,"ignore_LO":true,"min_subjects":5}
   },
   "universities": [
-    {
-      "code":"UCT","name":"University of Cape Town","location":"Cape Town, Western Cape","apply":"https://apply.uct.ac.za","logo":"https://upload.wikimedia.org/wikipedia/en/6/67/University_of_Cape_Town_logo.png","appFee":"R100","deadline":"2026-07-31","aps_rule":"UCT","min_aps":28,"website":"https://www.uct.ac.za"
-    },
-    {
-      "code":"WITS","name":"University of the Witwatersrand","location":"Johannesburg, Gauteng","apply":"https://www.wits.ac.za/apply","logo":"https://upload.wikimedia.org/wikipedia/en/1/18/University_of_the_Witwatersrand_logo.svg","appFee":"R100","deadline":"2026-09-30","aps_rule":"WITS","min_aps":30,"website":"https://www.wits.ac.za"
-    },
-    {
-      "code":"UP","name":"University of Pretoria","location":"Pretoria, Gauteng","apply":"https://www.up.ac.za/online-application","logo":"https://upload.wikimedia.org/wikipedia/en/2/20/University_of_Pretoria_logo.png","appFee":"R300","deadline":"2026-08-31","aps_rule":"UP","min_aps":27,"website":"https://www.up.ac.za"
-    },
-    {
-      "code":"SU","name":"Stellenbosch University","location":"Stellenbosch, Western Cape","apply":"https://www.sun.ac.za/english/apply","logo":"https://upload.wikimedia.org/wikipedia/en/4/41/Stellenbosch_University_logo.svg","appFee":"R100","deadline":"2026-07-31","aps_rule":"SU","min_aps":30,"website":"https://www.sun.ac.za"
-    },
-    {
-      "code":"UJ","name":"University of Johannesburg","location":"Johannesburg, Gauteng","apply":"https://www.uj.ac.za/apply","logo":"https://upload.wikimedia.org/wikipedia/en/8/8e/University_of_Johannesburg_logo.png","appFee":"R200","deadline":"2026-09-30","aps_rule":"UJ","min_aps":25,"website":"https://www.uj.ac.za"
-    },
-    {
-      "code":"NWU","name":"North-West University","location":"Potchefstroom, North West","apply":"https://studyat.nwu.ac.za","logo":"https://upload.wikimedia.org/wikipedia/en/5/5e/North-West_University_logo.png","appFee":"R200","deadline":"2026-09-30","aps_rule":"default","min_aps":24,"website":"https://www.nwu.ac.za"
-    },
-    {
-      "code":"UL","name":"University of Limpopo","location":"Polokwane, Limpopo","apply":"https://www.ul.ac.za/apply","logo":"https://upload.wikimedia.org/wikipedia/en/9/9e/University_of_Limpopo_logo.png","appFee":"R200","deadline":"2026-09-30","aps_rule":"default","min_aps":23,"website":"https://www.ul.ac.za"
-    },
-    {
-      "code":"UNISA","name":"UNISA","location":"Pretoria, Gauteng","apply":"https://www.unisa.ac.za/apply","logo":"https://upload.wikimedia.org/wikipedia/commons/5/5e/UNISA_logo.svg","appFee":"R115","deadline":"2026-11-14","aps_rule":"default","min_aps":18,"website":"https://www.unisa.ac.za"
-    }
+    {"code":"UCT","name":"University of Cape Town","location":"Cape Town, Western Cape","apply":"https://apply.uct.ac.za","logo":"https://upload.wikimedia.org/wikipedia/en/6/67/University_of_Cape_Town_logo.png","appFee":"R100","deadline":"2026-07-31","aps_rule":"UCT","min_aps":28,"website":"https://www.uct.ac.za","type":"Research"},
+    {"code":"WITS","name":"University of the Witwatersrand","location":"Johannesburg, Gauteng","apply":"https://www.wits.ac.za/apply","logo":"https://upload.wikimedia.org/wikipedia/en/1/18/University_of_the_Witwatersrand_logo.svg","appFee":"R100","deadline":"2026-09-30","aps_rule":"WITS","min_aps":30,"website":"https://www.wits.ac.za","type":"Research"},
+    {"code":"UP","name":"University of Pretoria","location":"Pretoria, Gauteng","apply":"https://www.up.ac.za/online-application","logo":"https://upload.wikimedia.org/wikipedia/en/2/20/University_of_Pretoria_logo.png","appFee":"R300","deadline":"2026-08-31","aps_rule":"UP","min_aps":27,"website":"https://www.up.ac.za","type":"Research"},
+    {"code":"SU","name":"Stellenbosch University","location":"Stellenbosch, Western Cape","apply":"https://www.sun.ac.za/english/apply","logo":"https://upload.wikimedia.org/wikipedia/en/4/41/Stellenbosch_University_logo.svg","appFee":"R100","deadline":"2026-07-31","aps_rule":"SU","min_aps":30,"website":"https://www.sun.ac.za","type":"Research"},
+    {"code":"UJ","name":"University of Johannesburg","location":"Johannesburg, Gauteng","apply":"https://www.uj.ac.za/apply","logo":"https://upload.wikimedia.org/wikipedia/en/8/8e/University_of_Johannesburg_logo.png","appFee":"R200","deadline":"2026-09-30","aps_rule":"UJ","min_aps":25,"website":"https://www.uj.ac.za","type":"Comprehensive"},
+    {"code":"NWU","name":"North-West University","location":"Potchefstroom, North West","apply":"https://studyat.nwu.ac.za","logo":"https://upload.wikimedia.org/wikipedia/en/5/5e/North-West_University_logo.png","appFee":"R200","deadline":"2026-09-30","aps_rule":"NWU","min_aps":24,"website":"https://www.nwu.ac.za","type":"Comprehensive"},
+    {"code":"UL","name":"University of Limpopo","location":"Polokwane, Limpopo","apply":"https://www.ul.ac.za/apply","logo":"https://upload.wikimedia.org/wikipedia/en/9/9e/University_of_Limpopo_logo.png","appFee":"R200","deadline":"2026-09-30","aps_rule":"UL","min_aps":23,"website":"https://www.ul.ac.za","type":"Traditional"},
+    {"code":"UNISA","name":"UNISA","location":"Pretoria, Gauteng","apply":"https://www.unisa.ac.za/apply","logo":"https://upload.wikimedia.org/wikipedia/commons/5/5e/UNISA_logo.svg","appFee":"R115","deadline":"2026-11-14","aps_rule":"UNISA","min_aps":18,"website":"https://www.unisa.ac.za","type":"Distance"},
+    {"code":"UFS","name":"University of Free State","location":"Bloemfontein, Free State","apply":"https://www.ufs.ac.za/apply","logo":"https://upload.wikimedia.org/wikipedia/en/5/5e/University_of_the_Free_State_logo.png","appFee":"R130","deadline":"2026-09-30","aps_rule":"NSC_DEFAULT","min_aps":24,"website":"https://www.ufs.ac.za","type":"Research"},
+    {"code":"UKZN","name":"University of KwaZulu-Natal","location":"Durban, KZN","apply":"https://www.ukzn.ac.za/apply","logo":"https://upload.wikimedia.org/wikipedia/en/5/5e/University_of_KwaZulu-Natal_logo.png","appFee":"R210","deadline":"2026-09-30","aps_rule":"NSC_DEFAULT","min_aps":26,"website":"https://www.ukzn.ac.za","type":"Research"},
+    {"code":"RU","name":"Rhodes University","location":"Makhanda, Eastern Cape","apply":"https://www.ru.ac.za/apply","logo":"https://upload.wikimedia.org/wikipedia/en/5/5e/Rhodes_University_logo.png","appFee":"R100","deadline":"2026-09-30","aps_rule":"NSC_DEFAULT","min_aps":27,"website":"https://www.ru.ac.za","type":"Traditional"},
+    {"code":"WSU","name":"Walter Sisulu University","location":"Mthatha, Eastern Cape","apply":"https://www.wsu.ac.za/apply","logo":"https://upload.wikimedia.org/wikipedia/en/5/5e/Walter_Sisulu_University_logo.png","appFee":"R180","deadline":"2026-09-30","aps_rule":"NSC_DEFAULT","min_aps":20,"website":"https://www.wsu.ac.za","type":"Comprehensive"},
+    {"code":"NMU","name":"Nelson Mandela University","location":"Gqeberha, Eastern Cape","apply":"https://www.mandela.ac.za/apply","logo":"https://upload.wikimedia.org/wikipedia/en/5/5e/Nelson_Mandela_University_logo.png","appFee":"R150","deadline":"2026-09-30","aps_rule":"NSC_DEFAULT","min_aps":24,"website":"https://www.mandela.ac.za","type":"Comprehensive"},
+    {"code":"CUT","name":"Central University of Technology","location":"Bloemfontein, Free State","apply":"https://www.cut.ac.za/apply","logo":"https://upload.wikimedia.org/wikipedia/en/5/5e/Central_University_of_Technology_logo.png","appFee":"R100","deadline":"2026-09-30","aps_rule":"NSC_DEFAULT","min_aps":20,"website":"https://www.cut.ac.za","type":"University of Technology"},
+    {"code":"DUT","name":"Durban University of Technology","location":"Durban, KZN","apply":"https://www.dut.ac.za/apply","logo":"https://upload.wikimedia.org/wikipedia/en/5/5e/Durban_University_of_Technology_logo.png","appFee":"R250","deadline":"2026-09-30","aps_rule":"NSC_DEFAULT","min_aps":22,"website":"https://www.dut.ac.za","type":"University of Technology"},
+    {"code":"CPUT","name":"Cape Peninsula University of Technology","location":"Cape Town, Western Cape","apply":"https://www.cput.ac.za/apply","logo":"https://upload.wikimedia.org/wikipedia/en/5/5e/Cape_Peninsula_University_of_Technology_logo.png","appFee":"R100","deadline":"2026-09-30","aps_rule":"NSC_DEFAULT","min_aps":22,"website":"https://www.cput.ac.za","type":"University of Technology"},
+    {"code":"TUT","name":"Tshwane University of Technology","location":"Pretoria, Gauteng","apply":"https://www.tut.ac.za/apply","logo":"https://upload.wikimedia.org/wikipedia/en/5/5e/Tshwane_University_of_Technology_logo.png","appFee":"R240","deadline":"2026-09-30","aps_rule":"NSC_DEFAULT","min_aps":22,"website":"https://www.tut.ac.za","type":"University of Technology"},
+    {"code":"VUT","name":"Vaal University of Technology","location":"Vanderbijlpark, Gauteng","apply":"https://www.vut.ac.za/apply","logo":"https://upload.wikimedia.org/wikipedia/en/5/5e/Vaal_University_of_Technology_logo.png","appFee":"R140","deadline":"2026-09-30","aps_rule":"NSC_DEFAULT","min_aps":20,"website":"https://www.vut.ac.za","type":"University of Technology"},
+    {"code":" MUT","name":"Mangosuthu University of Technology","location":"Umlazi, KZN","apply":"https://www.mut.ac.za/apply","logo":"https://upload.wikimedia.org/wikipedia/en/5/5e/Mangosuthu_University_of_Technology_logo.png","appFee":"R200","deadline":"2026-09-30","aps_rule":"NSC_DEFAULT","min_aps":20,"website":"https://www.mut.ac.za","type":"University of Technology"},
+    {"code":"SPU","name":"Sol Plaatje University","location":"Kimberley, Northern Cape","apply":"https://www.spu.ac.za/apply","logo":"https://upload.wikimedia.org/wikipedia/en/5/5e/Sol_Plaatje_University_logo.png","appFee":"R100","deadline":"2026-09-30","aps_rule":"NSC_DEFAULT","min_aps":24,"website":"https://www.spu.ac.za","type":"Traditional"},
+    {"code":"UZ","name":"University of Zululand","location":"KwaDlangezwa, KZN","apply":"https://www.unizulu.ac.za/apply","logo":"https://upload.wikimedia.org/wikipedia/en/5/5e/University_of_Zuland_logo.png","appFee":"R200","deadline":"2026-09-30","aps_rule":"NSC_DEFAULT","min_aps":22,"website":"https://www.unizulu.ac.za","type":"Traditional"},
+    {"code":"SMU","name":"Sefako Makgatho Health Sciences University","location":"Pretoria, Gauteng","apply":"https://www.smu.ac.za/apply","logo":"https://upload.wikimedia.org/wikipedia/en/5/5e/Sefako_Makgatho_Health_Sciences_University_logo.png","appFee":"R150","deadline":"2026-09-30","aps_rule":"WITS","min_aps":32,"website":"https://www.smu.ac.za","type":"Specialized"},
+    {"code":"UWC","name":"University of Western Cape","location":"Bellville, Western Cape","apply":"https://www.uwc.ac.za/apply","logo":"https://upload.wikimedia.org/wikipedia/en/5/5e/University_of_the_Western_Cape_logo.png","appFee":"R100","deadline":"2026-09-30","aps_rule":"NSC_DEFAULT","min_aps":26,"website":"https://www.uwc.ac.za","type":"Research"},
+    {"code":"FH","name":"Fort Hare University","location":"Alice, Eastern Cape","apply":"https://www.ufh.ac.za/apply","logo":"https://upload.wikimedia.org/wikipedia/en/5/5e/University_of_Fort_Hare_logo.png","appFee":"R100","deadline":"2026-09-30","aps_rule":"NSC_DEFAULT","min_aps":22,"website":"https://www.ufh.ac.za","type":"Traditional"},
+    {"code":"UMP","name":"University of Mpumalanga","location":"Mbombela, Mpumalanga","apply":"https://www.ump.ac.za/apply","logo":"https://upload.wikimedia.org/wikipedia/en/5/5e/University_of_Mpumalanga_logo.png","appFee":"R150","deadline":"2026-09-30","aps_rule":"NSC_DEFAULT","min_aps":22,"website":"https://www.ump.ac.za","type":"Traditional"},
+    {"code":"VUT","name":"Vaal University of Technology","location":"Vanderbijlpark, Gauteng","apply":"https://www.vut.ac.za/apply","logo":"https://upload.wikimedia.org/wikipedia/en/5/5e/Vaal_University_of_Technology_logo.png","appFee":"R140","deadline":"2026-09-30","aps_rule":"NSC_DEFAULT","min_aps":20,"website":"https://www.vut.ac.za","type":"University of Technology"}
   ],
   "courses": [
-    {"name":"BSc Medicine","uni":"WITS","aps":40,"duration":"6 years","career":"Doctor","subjects":"MATH,PHY,LIFE,ENGHL","min_maths":70,"min_science":70},
-    {"name":"BSc Medicine","uni":"UP","aps":38,"duration":"6 years","career":"Doctor","subjects":"MATH,PHY,LIFE,ENGHL","min_maths":70},
-    {"name":"BSc Computer Science","uni":"UCT","aps":35,"duration":"3 years","career":"Software Developer","subjects":"MATH,PHY,ENGHL","min_maths":60},
-    {"name":"BCom Accounting","uni":"UJ","aps":28,"duration":"3 years","career":"Accountant","subjects":"MATH,MATHLIT,ENGHL,ACC"},
-    {"name":"BEd Foundation Phase","uni":"UP","aps":25,"duration":"4 years","career":"Teacher","subjects":"ENGHL,MATHLIT"},
-    {"name":"LLB","uni":"UCT","aps":34,"duration":"4 years","career":"Lawyer","subjects":"ENGHL,HIST","min_english":70}
+    {"name":"MBChB Medicine","uni":"WITS","aps":40,"duration":"6 years","career":"Doctor","subjects":"MATH,PHY,LIFE,ENGHL","min_maths":70,"min_science":70,"faculty":"Health Sciences"},
+    {"name":"MBChB Medicine","uni":"UP","aps":38,"duration":"6 years","career":"Doctor","subjects":"MATH,PHY,LIFE,ENGHL","min_maths":70,"faculty":"Health Sciences"},
+    {"name":"MBChB Medicine","uni":"UCT","aps":39,"duration":"6 years","career":"Doctor","subjects":"MATH,PHY,LIFE,ENGHL","min_maths":70,"faculty":"Health Sciences"},
+    {"name":"BSc Computer Science","uni":"UCT","aps":35,"duration":"3 years","career":"Software Developer","subjects":"MATH,PHY,ENGHL","min_maths":60,"faculty":"Science"},
+    {"name":"BSc Computer Science","uni":"WITS","aps":34,"duration":"3 years","career":"Software Developer","subjects":"MATH,PHY,ENGHL","min_maths":60,"faculty":"Science"},
+    {"name":"BSc Computer Science","uni":"UP","aps":32,"duration":"3 years","career":"Software Developer","subjects":"MATH,ENGHL","min_maths":60,"faculty":"Engineering"},
+    {"name":"BCom Accounting","uni":"UJ","aps":28,"duration":"3 years","career":"Accountant","subjects":"MATH,MATHLIT,ENGHL,ACC","faculty":"Commerce"},
+    {"name":"BCom Accounting","uni":"UP","aps":30,"duration":"3 years","career":"Accountant","subjects":"MATH,MATHLIT,ENGHL,ACC","faculty":"Commerce"},
+    {"name":"BCom Law","uni":"UCT","aps":34,"duration":"4 years","career":"Lawyer","subjects":"ENGHL,HIST","min_english":70,"faculty":"Law"},
+    {"name":"LLB","uni":"WITS","aps":36,"duration":"4 years","career":"Lawyer","subjects":"ENGHL,HIST","min_english":70,"faculty":"Law"},
+    {"name":"BEd Foundation Phase","uni":"UP","aps":25,"duration":"4 years","career":"Teacher","subjects":"ENGHL,MATHLIT","faculty":"Education"},
+    {"name":"BEng Civil","uni":"WITS","aps":36,"duration":"4 years","career":"Engineer","subjects":"MATH,PHY,ENGHL","min_maths":70,"faculty":"Engineering"},
+    {"name":"BEng Mechanical","uni":"UP","aps":35,"duration":"4 years","career":"Engineer","subjects":"MATH,PHY,ENGHL","min_maths":70,"faculty":"Engineering"},
+    {"name":"BA Psychology","uni":"UCT","aps":30,"duration":"3 years","career":"Psychologist","subjects":"ENGHL,LIFE","faculty":"Humanities"},
+    {"name":"BPharm","uni":"NWU","aps":32,"duration":"4 years","career":"Pharmacist","subjects":"MATH,PHY,LIFE,ENGHL","min_maths":60,"faculty":"Health Sciences"},
+    {"name":"BSc Nursing","uni":"UL","aps":26,"duration":"4 years","career":"Nurse","subjects":"MATHLIT,LIFE,ENGHL","faculty":"Health Sciences"}
   ],
   "bursaries": [
-    {"name":"NSFAS","provider":"Government","field":"All","aps":0,"deadline":"2026-11-30","status":"open","apply":"https://www.nsfas.org.za","requirements":"Household income < R350k"},
-    {"name":"Funza Lushaka","provider":"DBE","field":"Education","aps":24,"deadline":"2026-12-15","status":"open","apply":"https://www.funzalushaka.doe.gov.za","requirements":"Must teach after"},
-    {"name":"Standard Bank Bursary","provider":"Standard Bank","field":"Commerce,IT,Engineering","aps":65,"deadline":"2026-09-30","status":"closing","apply":"https://www.standardbank.co.za/bursary","requirements":"Grade 12 with 65%"}
+    {"name":"NSFAS","provider":"Government","field":"All","aps":0,"deadline":"2026-11-30","status":"open","apply":"https://www.nsfas.org.za","requirements":"Household income < R350k","cover":"Tuition,Accommodation,Books"},
+    {"name":"Funza Lushaka","provider":"Department of Education","field":"Education","aps":24,"deadline":"2026-12-15","status":"open","apply":"https://www.funzalushaka.doe.gov.za","requirements":"Commit to teach 1yr per yr funded","cover":"Tuition,Books,Stipend"},
+    {"name":"Standard Bank Bursary","provider":"Standard Bank","field":"Commerce,IT,Engineering","aps":65,"deadline":"2026-09-30","status":"closing","apply":"https://www.standardbank.co.za/bursary","requirements":"Grade 12 65%+, Maths 60%","cover":"Full"},
+    {"name":"Transnet Bursary","provider":"Transnet","field":"Engineering,Supply Chain","aps":60,"deadline":"2026-10-31","status":"open","apply":"https://www.transnet.net","requirements":"Maths 60%, Science 60%","cover":"Full"},
+    {"name":"Eskom Bursary","provider":"Eskom","field":"Engineering,Accounting","aps":70,"deadline":"2026-09-30","status":"open","apply":"https://www.eskom.co.za","requirements":"Maths 70%, Science 70%","cover":"Full"},
+    {"name":"MTN Bursary","provider":"MTN","field":"IT,Engineering,Marketing","aps":65,"deadline":"2026-10-15","status":"open","apply":"https://www.mtn.co.za","requirements":"Grade 12 65%","cover":"Full"}
   ],
   "career_questions": [
     {"q":"Do you prefer working with numbers or people?","a1":"Numbers","career1":"Accounting","a2":"People","career2":"Nursing"},
     {"q":"Which subject do you enjoy most?","a1":"Math + Science","career1":"Engineering","a2":"Languages + History","career2":"Law"},
-    {"q":"Best work environment for you?","a1":"Hospital/Lab","career1":"Medicine","a2":"Office/Computer","career2":"IT"}
+    {"q":"Best work environment for you?","a1":"Hospital/Lab","career1":"Medicine","a2":"Office/Computer","career2":"IT"},
+    {"q":"What motivates you?","a1":"Helping people","career1":"Psychology","a2":"Building things","career2":"Engineering"},
+    {"q":"Your math level?","a1":"Strong 70%+","career1":"Engineering","a2":"Average 50-69%","career2":"Business Studies"},
+    {"q":"Preferred study style?","a1":"Research + Theory","career1":"Science","a2":"Practical + Hands-on","career2":"CAT"},
+    {"q":"Leadership vs Team player?","a1":"Leadership","career1":"Business Management","a2":"Team player","career2":"Teaching"},
+    {"q":"Interest in technology?","a1":"Very high","career1":"IT","a2":"Medium","career2":"Accounting"},
+    {"q":"Work with animals/nature?","a1":"Yes","career1":"Agricultural Sciences","a2":"No","career2":"Law"},
+    {"q":"Creative or analytical?","a1":"Creative","career1":"Visual Arts","a2":"Analytical","career2":"Economics"},
+    {"q":"Public speaking comfort?","a1":"Love it","career1":"Law","a2":"Prefer behind scenes","career2":"Computer Science"},
+    {"q":"Salary priority?","a1":"High salary","career1":"Medicine","a2":"Job security","career2":"Teaching"}
   ]
 }
